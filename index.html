@@ -63,11 +63,11 @@
             <br>
 
             <label for="">Trabalho:</label>
-            <div class="trabalho" id="trabalho">
-                <input type="radio" required> Autonomo
-                <input type="radio" required> Empregado CLT
-                <input type="radio" required> Empresario
-                <input type="radio" required> Tipo Goku
+            <div class="trabalho">
+                <input type="radio" id="cargo" value="Autonomo" required> Autonomo
+                <input type="radio" id="cargo" value="Empregado CLT" required> Empregado CLT
+                <input type="radio" id="cargo" value="Empresario" required> Empresario
+                <input type="radio" id="cargo" value="Tipo Goku" required> Tipo Goku
             </div>
         </fieldset>
 
@@ -75,36 +75,36 @@
 
         <fieldset class="perfeito">
             <legend>Seu Açai é perfeito de que jeito?</legend>
-            <input type="checkbox" id="jeito" required> Puro
-            <input type="checkbox" id="jeito" required> Com Banana
-            <input type="checkbox" id="jeito" required> Com Morango
-            <input type="checkbox" id="jeito" required> Com Granola
-            <input type="checkbox" id="jeito" required> Tem gosto de Terra
+            <input type="radio" id="sabor" value="Puro" required> Puro
+            <input type="radio" id="sabor" value="Com Banana" required> Com Banana
+            <input type="radio" id="sabor" value="Com Morango" required> Com Morango
+            <input type="radio" id="sabor" value="Com Granola" required> Com Granola
+            <input type="radio" id="sabor" value="Tem gosto de Terra" required> Tem gosto de Terra
         </fieldset>
 
         <br>
 
         <fieldset class="tamanhocopo">
             <legend>Qual o tamanho preferido?</legend>
-            <input type="radio" id="tamanho" required> 500ml
-            <input type="radio" id="tamanho" required> 300ml
-            <input type="radio" id="tamanho" required> 100ml
-            <input type="radio" id="tamanho" required> Casquinha
-            <input type="radio" id="tamanho" required> Qual parte do gosto de terra você não entendeu?
+            <input type="radio" id="tamanho" value="500ml" required> 500ml
+            <input type="radio" id="tamanho" value="300ml" required> 300ml
+            <input type="radio" id="tamanho" value="100ml" required> 100ml
+            <input type="radio" id="tamanho" value="Casquinha" required> Casquinha
+            <input type="radio" id="tamanho" value="Qual parte do gosto de terra você não entendeu?" required> Qual parte do gosto de terra você não entendeu?
         </fieldset>
 
         <br>
 
         <fieldset class="observacoes">
             observações: <br>
-            <textarea name="" id="" placeholder="Escreva suas observações... Eu gosto de açai porque..."></textarea>
+            <textarea id="obs" placeholder="Escreva suas observações... Eu gosto de açai porque..."></textarea>
         </fieldset>
+        
+        <br>
+        <input type="submit" name="enviar" id="botoes">
+        <input type="reset" name="redefinir" id="botoes">
+        <input type="button" onclick="json()" value="Gerar JSON" id="botoes">
     </form>
-
-    <br>
-    <input type="submit" name="enviar" id="botoes">
-    <input type="reset" name="redefinir" id="botoes">
-    <input type="button" onclick="json()" value="Gerar JSON" id="botoes">
 </body>
 
 </html>
