@@ -17,27 +17,27 @@
             <legend>Dados pessoais:</legend>
 
             <label for="">Nome:</label><br>
-            <input type="text" name="name" required>
+            <input type="text" id="name" required>
 
             <br><br>
 
             <label for="">Idade:</label><br>
-            <input type="number" name="idade" required>
+            <input type="number" id="idade" required>
 
             <br><br>
 
             <label for="">Telefone:</label><br>
-            <input type="tel" name="telefone" required>
+            <input type="number" id="telefone" required>
 
             <br><br>
 
             <label for="">Endereço:</label><br>
-            <input type="text" name="endereco" required>
+            <input type="text" id="endereco" required>
 
             <br><br>
 
             <label for="">Planeta de Origem:</label><br>
-            <select name="" id="" required>
+            <select id="planeta" required>
                 <option value="">Selecione:</option>
                 <option value="Planeta Terra">Planeta Terra</option>
                 <option value="Planeta Namekusei">Planeta Namekusei</option>
@@ -50,8 +50,8 @@
 
         <fieldset class="dados_extras">
             <legend>Dados extras:</legend>
-            <label for="">Raça do Universo 7 preferida:</label>
-            <select name="" id="" required>
+            <label>Raça do Universo 7 preferida:</label>
+            <select id="dados" required>
                 <option value="">Selecione:</option>
                 <option value="Saiyajins">Saiyajins</option>
                 <option value="Namekuseijins">Namekuseijins</option>
@@ -63,7 +63,7 @@
             <br>
 
             <label for="">Trabalho:</label>
-            <div class="trabalho">
+            <div class="trabalho" id="trabalho">
                 <input type="radio" required> Autonomo
                 <input type="radio" required> Empregado CLT
                 <input type="radio" required> Empresario
@@ -75,22 +75,22 @@
 
         <fieldset class="perfeito">
             <legend>Seu Açai é perfeito de que jeito?</legend>
-            <input type="checkbox" required> Puro
-            <input type="checkbox" required> Com Banana
-            <input type="checkbox" required> Com Morango
-            <input type="checkbox" required> Com Granola
-            <input type="checkbox" required> Tem gosto de Terra
+            <input type="checkbox" id="jeito" required> Puro
+            <input type="checkbox" id="jeito" required> Com Banana
+            <input type="checkbox" id="jeito" required> Com Morango
+            <input type="checkbox" id="jeito" required> Com Granola
+            <input type="checkbox" id="jeito" required> Tem gosto de Terra
         </fieldset>
 
         <br>
 
         <fieldset class="tamanhocopo">
             <legend>Qual o tamanho preferido?</legend>
-            <input type="radio" required> 500ml
-            <input type="radio" required> 300ml
-            <input type="radio" required> 100ml
-            <input type="radio" required> Casquinha
-            <input type="radio" required> Qual parte do gosto de terra você não entendeu?
+            <input type="radio" id="tamanho" required> 500ml
+            <input type="radio" id="tamanho" required> 300ml
+            <input type="radio" id="tamanho" required> 100ml
+            <input type="radio" id="tamanho" required> Casquinha
+            <input type="radio" id="tamanho" required> Qual parte do gosto de terra você não entendeu?
         </fieldset>
 
         <br>
@@ -104,6 +104,7 @@
     <br>
     <input type="submit" name="enviar" id="botoes">
     <input type="reset" name="redefinir" id="botoes">
+    <input type="button" onclick="json()" value="Gerar JSON" id="botoes">
 </body>
 
 </html>
